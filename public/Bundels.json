@@ -1,0 +1,102 @@
+{
+    "contract":{
+        "bundels":{
+            "filming": {
+                "nickname":"Basic",
+                "description": "وهي الباقه العاديه حيث يتم فيها التصوير حسب الساعات المختاره مع اضافه مونتاج ازاله الفوارغ في الفيديو فقط و عمل ريلر فقط",
+                "types":[
+                    {"id":1, "title": "Basic 1", "price":150, "hours":1},
+                    {"id":2, "title": "Basic 5", "price":120, "hours":5},
+                    {"id":3, "title": "Basic 10", "price":100, "hours":10},
+                    {"id":4, "title": "Basic 15", "price":90, "hours":15},
+                    {"id":5, "title": "Basic 20", "price":80, "hours":20}
+                ]
+            },
+            "montage":[
+                {
+                    "nickname":"Intermediate",
+                    "description": "وهي باقه مونتاج تحوي بعض الترنسيشن وعدد 5 اضافات نصوص + اسكتشات ( السعر للساعه منفرد )",
+                    "types":[
+                        {"id":1, "title": "Intermediate 1", "price":200, "hours":1},
+                        {"id":2, "title": "Intermediate 5", "price":180, "hours":5},
+                        {"id":3, "title": "Intermediate 10", "price":170, "hours":10},
+                        {"id":4, "title": "Intermediate 15", "price":160, "hours":15},
+                        {"id":5, "title": "Intermediate 20", "price":150, "hours":20}
+                    ]
+                },{
+                    "nickname":"Advanced",
+                    "description":"وهي باقه مونتاج تحوي بعض الترنسيشن وعدد 5 اضافات نصوص + اسكتشات ( السعر للساعه منفرد )",
+                    "types":[
+                        {"id":1, "title": "Advanced 1", "price":350, "hours":1},
+                        {"id":2, "title": "Advanced 5", "price":320, "hours":5},
+                        {"id":3, "title": "Advanced 10", "price":310, "hours":10},
+                        {"id":4, "title": "Advanced 15", "price":290, "hours":15},
+                        {"id":5, "title": "Advanced 20", "price":270, "hours":20}
+                    ]
+                }
+            ]    
+        },
+        "Services":{
+            "Intros":[
+                {"id":1, "title": " INTRO – BASIC ", "price":200 },
+                {"id":2, "title": " MOTION GRAPHIC ", "price":350 },
+                {"id":3, "title": " M.G -INTERMEDIATE ", "price":500 },
+                {"id":4, "title": " M.G- ADV. ", "price":1000 },
+                {"id":5, "title": " INTRO- 3 D ", "price":1500 }
+            ],
+            "Reels":[
+                {"id": 1, "title": " Reel-Basic", "description": " تحت 90 ث .. تقطيعات ", "price": 200},
+                {"id": 2, "title": " MOTION GRAPHIC ", "description": " تحت 90 ث .. تقطيعات ", "price": 350},
+                {"id": 3, "title": " M.G -INTERMEDIATE ", "description": " تحت 90 ث .. تقطيعات ", "price": 500},
+                {"id": 4, "title": " M.G- ADV.", "description": " تحت 90 ث .. تقطيعات ", "price": 700},
+                {"id": 5, "title": " INTRO- 3 D ", "description": " تحت 90 ث .. تقطيعات ", "price": 1000}
+            ],
+            "Design":[
+                {
+                    "id": 1, "title": "learning_Posts", 
+                    "type":[
+                        {"id":1 ,"title": "Standard" , "price": 100},
+                        {"id":2 ,"title": "Inter" , "price": 150},
+                        {"id":3 ,"title": "Advanced" , "price": 200}
+                    ]
+                },
+                {
+                    "id": 2, "title": "cover",
+                    "type":[
+                        {"title": "Standard" , "price": 200},
+                        {"title": "Inter" , "price": 350},
+                        {"title": "Advanced" , "price": 500}
+                    ]
+                },
+                {
+                    "id": 3, "title": "certificate",
+                    "type":[
+                        {"title": "Standard" , "price": 100},
+                        {"title": "Inter" , "price": 150},
+                        {"title": "Advanced" , "price": 200}
+                    ]
+                },
+                {
+                    "id": 4, "title": "THUMBNAIL",
+                    "type":[
+                    {"title": "Standard" , "price": 70},
+                    {"title": "Inter" , "price": 100},
+                    {"title": "Advanced" , "price": 150}
+                ]
+            }
+            ],
+            "Page_Management":[
+                {
+                    "id": 1, "title": "Social Media MNG",
+                    "types":[
+                        {"id": 1, "title": "Bundle A", "description": "بوست يومى مع ستوري يومى مع متابعة كاملة", "price":1700},
+                        {"id": 2, "title": "Bundle B", "description": "بوست 4 مرات اسبوعيا +استوري يومى مع متابعة كاملة", "price":1500},
+                        {"id": 3, "title": "Bundle C", "description": "بوست 3 مرات اسبوعيا + استوري كل يوم مع متابعة كاملة", "price":1200}
+                    ]
+                },
+                {"id": 2, "title": "Sponsor's ADV MNG", "description": "مستقل ... حساب البوست والتصميم او الفيديو حسب الباقه ... تابع اداره الصفحه", "price":null},
+                {"id": 3, "title": "Youtube MNG", "description": "تشمل تجهيز الفيديوز وتحميلها ومتابعة الاحصائيات" , "price":1200}
+            ]
+        }
+    }
+}

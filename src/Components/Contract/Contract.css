@@ -1,0 +1,237 @@
+.contract-container {
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+    background-color: #fff;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .contract-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #541568;
+  }
+  
+  .contract-subtitle {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #eb2785;
+  }
+  
+  .contract-text {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  
+  .contract-total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #1ca800;
+  }
+  
+  .contract-input {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    width: 200px;
+    font-family: inherit;
+    font-size: 15px;
+  }
+  
+  .contract-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .contract-table th,
+  .contract-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  
+  .contract-table th {
+    background-color: #f0e6f6;
+    color: #333;
+  }
+  
+  .contract-footer {
+    margin-top: 40px;
+    font-style: italic;
+    text-align: center;
+    color: #777;
+  }
+  
+  @media print {
+    body {
+      direction: rtl;
+      font-family: "Arial", sans-serif;
+    }
+  
+    .print-button {
+      display: none; /* نخفي زر الطباعة وقت الطباعة */
+    }
+  
+    .contract-wrapper {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .contract-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contract-header img{
+      width: auto;
+      height: 50px;
+
+    }
+  
+    .contract-logo {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+  
+    .contract-container {
+      padding: 0 30px;
+    }
+  }
+  
+  .contract-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contract-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .contract-title {
+    font-size: 28px;
+    margin: 0;
+    color: #541568;
+  }
+  
+  .print-button {
+    background-color: #541568;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .print-button:hover {
+    background-color: #3a0e4a;
+  }
+  
+  @media print {
+    .contract-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo-title-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contract-logo {
+      height: 50px;
+      margin: 0;
+    }
+    
+    .contract-title {
+      margin: 0;
+    }
+  }
+
+  .contract-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .contract-table th,
+  .contract-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  
+  .contract-table th {
+    background-color: #f0e6f6;
+    color: #333;
+  }
+  
+  /* تعديلات للعرض على الموبايل */
+  @media (max-width: 768px) {
+    .contract-table {
+      font-size: 14px;
+    }
+    .contract-table th,
+    .contract-table td {
+      padding: 6px 8px;
+    }
+  }
+
+  .client-select {
+    border: 1px solid #541568;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 0 5px;
+    font-family: "Cairo", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .submit-contract {
+    background-color: #541568;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .submit-contract:hover {
+    background-color: #3a0e4a;
+  }
+  
+  @media print {
+    .client-select, .submit-contract {
+      display: none;
+    }
+  }

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=WDXL+Lubrifont+JP+N&display=swap');
+
+:root {
+  /* الألوان الأساسية - محدثة */
+  --primary: #541568;         /* اللون الأصلي البنفسجي الغامق */
+  --primary-light: #7a3a8a;   /* درجة فاتحة من البنفسجي */
+  --primary-dark: #3a0e4a;    /* درجة غامقة من البنفسجي */
+  
+  --secondary: #eb2785;       /* اللون الوردي الفاتح */
+  --secondary-light: #ff5da2; /* درجة فاتحة من الوردي */
+  --secondary-dark: #c41a6b;  /* درجة غامقة من الوردي */
+  
+  /* الألوان المحايدة - محدثة */
+  --dark: #333333;           /* للنصوص الرئيسية */
+  --gray: #777777;           /* للنصوص الثانوية */
+  --light: #f7f7f7;          /* للخلفيات */
+  --white: #ffffff;          /* للأسطح والنصوص على الخلفيات الداكنة */
+  
+  /* ألوان الحالة - محدثة */
+  --profit: #1ca800;         /* نجاح/ربح */
+  --warning: #ff8c00;        /* تحذير */
+  --danger: #ff0000;         /* خطأ/خسارة */
+  --info: #0077cc;           /* معلومات */
+  
+  /* التباين */
+  --text-primary: var(--dark);
+  --text-secondary: var(--gray);
+  --text-inverted: var(--white);
+  
+  /* الخطوط */
+  --font-primary: "WDXL Lubrifont JP N", sans-serif;
+  --font-secondary: "Edu NSW ACT Foundation", cursive;
+  --font-tertiary: "IBM Plex Sans", sans-serif;
+  
+  /* أحجام الخطوط */
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  
+  /* الظلال */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* الزوايا */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* المسافات */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  
+  /* الخلفيات */
+  --bg-primary: var(--light);
+  --bg-secondary: var(--white);
+  --bg-dark: var(--primary-dark);
+}

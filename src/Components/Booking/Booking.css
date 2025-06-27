@@ -1,0 +1,449 @@
+/* Booking.css - معدل حسب نظام الألوان الجديد */
+@import "../../theme/colors.css";
+
+/* التنسيقات العامة */
+.acc-container {
+  font-family: var(--font-primary);
+  direction: rtl;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* زر الإضافة */
+.add-btn {
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  box-shadow: var(--shadow-sm);
+}
+
+.add-btn:hover {
+  background-color: var(--secondary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* جدول الأسبوع */
+.week-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.day-cell {
+  border: 1px solid rgba(var(--primary-dark), 0.1);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s;
+  background-color: var(--bg-secondary);
+}
+
+.day-cell:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.day-cell.selected {
+  border: 2px solid var(--primary);
+}
+
+.day-header {
+  background-color: rgba(var(--primary), 0.1);
+  padding: var(--space-sm);
+  text-align: center;
+  border-bottom: 1px solid rgba(var(--primary-dark), 0.1);
+  color: var(--primary-dark);
+}
+
+.day-header strong {
+  display: block;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.day-body {
+  padding: var(--space-sm);
+  min-height: 120px;
+  background-color: var(--bg-secondary);
+}
+
+.count {
+  font-size: var(--font-size-sm);
+  color: var(--gray);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  color: var(--gray);
+  padding: var(--space-md) 0;
+}
+
+.appointment-item {
+  padding: var(--space-xs);
+  margin-bottom: var(--space-xs);
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(var(--primary-dark), 0.1);
+}
+
+.appointment-item.attended {
+  background-color: rgba(var(--profit), 0.1);
+  border-color: rgba(var(--profit), 0.2);
+}
+
+.time-range {
+  font-weight: bold;
+  color: var(--dark);
+  font-size: var(--font-size-sm);
+}
+
+.attendance-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+}
+
+/* تفاصيل اليوم */
+.day-details {
+  margin-top: var(--space-lg);
+  background-color: var(--bg-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(var(--primary-dark), 0.1);
+}
+
+.day-details-title {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(var(--primary-dark), 0.1);
+}
+
+.appointments-list {
+  list-style: none;
+  padding: 0;
+}
+
+.appointment-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-sm);
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s;
+  border: 1px solid rgba(var(--primary-dark), 0.1);
+}
+
+.appointment-detail.attended {
+  background-color: rgba(var(--profit), 0.1);
+  border-color: rgba(var(--profit), 0.2);
+}
+
+.appointment-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.customer-name {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.time-slot {
+  color: var(--gray);
+  font-size: var(--font-size-sm);
+}
+
+.attended-badge {
+  color: var(--profit);
+  font-size: var(--font-size-sm);
+  background-color: rgba(var(--profit), 0.1);
+  padding: 2px var(--space-xs);
+  border-radius: var(--radius-sm);
+}
+
+.appointment-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.edit-btn {
+  background-color: var(--warning);
+  color: var(--white);
+}
+
+.delete-btn {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* النموذج المنبثق */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--bg-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  width: 90%;
+  max-width: 500px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(var(--primary-dark), 0.2);
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  color: var(--primary-dark);
+  font-size: var(--font-size-lg);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+  color: var(--primary-dark);
+  font-size: var(--font-size-sm);
+}
+
+.form-select, .form-input {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid rgba(var(--primary-dark), 0.2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-base);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.form-select:focus, .form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(var(--primary), 0.2);
+}
+
+.customer-summary {
+  background-color: var(--bg-primary);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  margin: var(--space-md) 0;
+  border: 1px solid rgba(var(--primary-dark), 0.1);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-xs);
+  font-size: var(--font-size-sm);
+}
+
+.summary-label {
+  color: var(--gray);
+}
+
+.summary-value {
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
+.subscriptions-summary {
+  margin-top: var(--space-sm);
+}
+
+.subscription-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--gray);
+  margin-bottom: var(--space-xs);
+}
+
+.empty-message {
+  color: var(--gray);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-lg);
+  gap: var(--space-sm);
+}
+
+.submit-btn, .cancel-btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.submit-btn {
+  background-color: var(--profit);
+  color: var(--white);
+}
+
+.submit-btn:disabled {
+  background-color: var(--gray);
+  cursor: not-allowed;
+}
+
+.submit-btn:not(:disabled):hover {
+  background-color: rgba(var(--profit), 0.8);
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.cancel-btn:hover {
+  background-color: rgba(var(--danger), 0.8);
+  transform: translateY(-2px);
+}
+
+.edit-notice {
+  background-color: rgba(var(--warning), 0.1);
+  color: var(--warning);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  border: 1px solid rgba(var(--warning), 0.2);
+}
+
+.error-message {
+  background-color: rgba(var(--danger), 0.1);
+  color: var(--danger);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  border: 1px solid rgba(var(--danger), 0.2);
+}
+
+/* تحميل */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(var(--bg-secondary), 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.loading-spinner {
+  border: 5px solid rgba(var(--primary), 0.1);
+  border-top: 5px solid var(--primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: var(--space-md);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-overlay p {
+  color: var(--primary);
+  font-size: var(--font-size-lg);
+}
+
+/* تجاوبية */
+@media (max-width: 768px) {
+  .week-table {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .appointment-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+  
+  .appointment-actions {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: var(--space-md);
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

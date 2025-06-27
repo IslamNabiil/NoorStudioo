@@ -1,0 +1,23 @@
+[
+    {
+      "id": "app001",
+      "customerId": "c001",
+      "date": "2025-06-21",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "hours": 2,
+      "status": "confirmed",
+      "notes": ""
+    },
+    {
+      "id": "app002",
+      "customerId": "c002",
+      "date": "2025-06-22",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "hours": 2,
+      "status": "confirmed",
+      "notes": ""
+    }
+  ]
+  

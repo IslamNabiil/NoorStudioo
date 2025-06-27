@@ -1,0 +1,104 @@
+@import '../../theme/colors.css';
+
+.construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--light) 0%, var(--primary-light) 100%);
+  padding: var(--space-xl);
+  text-align: center;
+  font-family: var(--font-primary);
+}
+
+.construction-content {
+  max-width: 800px;
+  padding: var(--space-xl);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.construction-icon {
+  color: var(--secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.construction-title {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  font-family: var(--font-tertiary);
+}
+
+.construction-text {
+  color: var(--dark);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  font-family: var(--font-primary);
+}
+
+.construction-workers {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.worker {
+  color: var(--primary);
+  background: var(--light);
+  padding: var(--space-md);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.worker:hover {
+  background: var(--secondary-light);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.progress-container {
+  height: 10px;
+  background: var(--light);
+  border-radius: var(--radius-sm);
+  margin: 0 auto var(--space-xl);
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--secondary), var(--secondary-dark));
+  border-radius: var(--radius-sm);
+}
+
+.coming-soon {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-top: var(--space-lg);
+  font-family: var(--font-secondary);
+}
+
+/* تأثيرات للهواتف */
+@media (max-width: 768px) {
+  .construction-content {
+    padding: var(--space-md);
+  }
+  
+  .construction-title {
+    font-size: 2rem;
+  }
+  
+  .construction-workers {
+    gap: var(--space-md);
+  }
+  
+  .worker {
+    padding: var(--space-sm);
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../theme/colors.css';
+
+.service-card {
+  background-color: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  min-width: 180px;
+  flex: 1 1 calc(33.333% - 10px);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid var(--light);
+}
+
+.service-card:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.service-card:hover strong,
+.service-card:hover p {
+  color: var(--white);
+}
+
+.service-card.active {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card.active strong,
+.service-card.active p {
+  color: var(--white);
+}
+
+.service-card strong {
+  color: var(--primary);
+  font-family: var(--font-tertiary);
+  display: block;
+  margin-bottom: var(--space-xs);
+  transition: color 0.3s ease;
+}
+
+.service-card p {
+  color: var(--dark);
+  font-family: var(--font-primary);
+  transition: color 0.3s ease;
+}
