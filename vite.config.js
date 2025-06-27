@@ -8,6 +8,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true
+  },
+  build: {
+    minify: false, // تعطيل Minification لرؤية الأخطاء بوضوح
+    sourcemap: true
   }
 })
 
