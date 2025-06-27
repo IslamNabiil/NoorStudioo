@@ -1,6 +1,6 @@
   import React, { useEffect, useState } from "react";
   import BundleCard from "./BundleCard";
-  import SmartServiceCard from "./Services/smartServiceCard";
+  import SmartServiceCard from "./Services/SmartServiceCard";
   import LoadingSpinner from "../Loading/LoadingSpinner";
 
   const Bundle = ({ data }) => {
