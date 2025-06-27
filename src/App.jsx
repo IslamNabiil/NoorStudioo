@@ -8,7 +8,7 @@ import Accounts from "./Components/Accounts/Customers";
 import CustomerDetails from "./Components/Accounts/CustomerDetails"
 import NotFound from "./Components/Errors/NotFound";
 import Booking from "./Components/Booking/Booking";
-import HandOver from "./Components/Handover/Handover";
+import HandOver from "./Components/HandOver/HandOver";
 import Contract from "./Components/Contract/Contract";
 import Home from "./Components/Home/Home";
 
