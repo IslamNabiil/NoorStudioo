@@ -1,0 +1,454 @@
+{
+  "customers": [
+    {
+      "id": "001",
+      "name": "Ahmed Ali",
+      "email": "ahmedali1145@gmail.com",
+      "tel": "01145199760",
+      "subscriptions": [
+        {
+          "itemId": 2,
+          "type": "bundle",
+          "start": "2025-06-17T00:00:00",
+          "end": "2025-07-17T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 462,
+          "date": "2025-06-19T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 5"
+        }
+      ],
+      "balance": 120,
+      "ledger": [
+        {
+          "date": "2025-06-17T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 2,
+          "description": "بدء اشتراك Basic 5",
+          "details": {
+            "startDate": "2025-06-17T00:00:00",
+            "endDate": "2025-07-17T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-19T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 2,
+          "description": "دفعة باقة Basic 5",
+          "change": 462
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "name": "Mohamed Mahmoud",
+      "email": "ahmedali1245@gmail.com",
+      "tel": "01245199760",
+      "subscriptions": [
+        {
+          "itemId": 2,
+          "type": "bundle",
+          "start": "2025-06-15T00:00:00",
+          "end": "2025-07-15T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 573,
+          "date": "2025-06-16T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 5"
+        }
+      ],
+      "balance": -27,
+      "ledger": [
+        {
+          "date": "2025-06-15T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 2,
+          "description": "بدء اشتراك Basic 5",
+          "details": {
+            "startDate": "2025-06-15T00:00:00",
+            "endDate": "2025-07-15T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-16T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 2,
+          "description": "دفعة باقة Basic 5",
+          "change": 573
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "name": "Ibrahem Ali",
+      "email": "ahmedali1155@gmail.com",
+      "tel": "01155199760",
+      "subscriptions": [
+        {
+          "itemId": 3,
+          "type": "bundle",
+          "start": "2025-06-14T00:00:00",
+          "end": "2025-07-14T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 1000,
+          "date": "2025-06-17T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 10"
+        }
+      ],
+      "balance": 0,
+      "ledger": [
+        {
+          "date": "2025-06-14T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "بدء اشتراك Basic 10",
+          "details": {
+            "startDate": "2025-06-14T00:00:00",
+            "endDate": "2025-07-14T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-17T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "دفعة باقة Basic 10",
+          "change": 1000
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "name": "Shimaa Mohsen",
+      "email": "ahmedali1165@gmail.com",
+      "tel": "01165199760",
+      "subscriptions": [
+        {
+          "itemId": 3,
+          "type": "bundle",
+          "start": "2025-06-10T00:00:00",
+          "end": "2025-07-10T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 952,
+          "date": "2025-06-12T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 10"
+        }
+      ],
+      "balance": -48,
+      "ledger": [
+        {
+          "date": "2025-06-10T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "بدء اشتراك Basic 10",
+          "details": {
+            "startDate": "2025-06-10T00:00:00",
+            "endDate": "2025-07-10T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-12T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "دفعة باقة Basic 10",
+          "change": 952
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "name": "Khaled Mostafa",
+      "email": "ahmedali1175@gmail.com",
+      "tel": "01175199760",
+      "subscriptions": [
+        {
+          "itemId": 3,
+          "type": "bundle",
+          "start": "2025-06-16T00:00:00",
+          "end": "2025-07-16T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 757,
+          "date": "2025-06-17T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 10"
+        }
+      ],
+      "balance": 1500,
+      "ledger": [
+        {
+          "date": "2025-06-16T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "بدء اشتراك Basic 10",
+          "details": {
+            "startDate": "2025-06-16T00:00:00",
+            "endDate": "2025-07-16T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-17T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "دفعة باقة Basic 10",
+          "change": 757
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "name": "Ahmed Morad",
+      "email": "ahmedali1185@gmail.com",
+      "tel": "01185199760",
+      "subscriptions": [
+        {
+          "itemId": 1,
+          "type": "bundle",
+          "start": "2025-06-14T00:00:00",
+          "end": "2025-07-14T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 112,
+          "date": "2025-06-15T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 1"
+        }
+      ],
+      "balance": -38,
+      "ledger": [
+        {
+          "date": "2025-06-14T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "بدء اشتراك Basic 1",
+          "details": {
+            "startDate": "2025-06-14T00:00:00",
+            "endDate": "2025-07-14T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-15T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "دفعة باقة Basic 1",
+          "change": 112
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "name": "Moaaz Hosny",
+      "email": "ahmedali1195@gmail.com",
+      "tel": "01195199760",
+      "subscriptions": [
+        {
+          "itemId": 1,
+          "type": "bundle",
+          "start": "2025-06-13T00:00:00",
+          "end": "2025-07-13T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 82,
+          "date": "2025-06-15T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 1"
+        }
+      ],
+      "balance": 18,
+      "ledger": [
+        {
+          "date": "2025-06-13T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "بدء اشتراك Basic 1",
+          "details": {
+            "startDate": "2025-06-13T00:00:00",
+            "endDate": "2025-07-13T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-15T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "دفعة باقة Basic 1",
+          "change": 82
+        }
+      ]
+    },
+    {
+      "id": "008",
+      "name": "Mostafa Heseen",
+      "email": "ahmedali1146@gmail.com",
+      "tel": "01146199760",
+      "subscriptions": [
+        {
+          "itemId": 1,
+          "type": "bundle",
+          "start": "2025-06-11T00:00:00",
+          "end": "2025-07-11T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 99,
+          "date": "2025-06-12T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 1"
+        }
+      ],
+      "balance": 96,
+      "ledger": [
+        {
+          "date": "2025-06-11T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "بدء اشتراك Basic 1",
+          "details": {
+            "startDate": "2025-06-11T00:00:00",
+            "endDate": "2025-07-11T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-12T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 1,
+          "description": "دفعة باقة Basic 1",
+          "change": 99
+        }
+      ]
+    },
+    {
+      "id": "009",
+      "name": "Hassan Mohamed",
+      "email": "ahmedali1147@gmail.com",
+      "tel": "01147199760",
+      "subscriptions": [
+        {
+          "itemId": 3,
+          "type": "bundle",
+          "start": "2025-06-12T00:00:00",
+          "end": "2025-07-12T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 604,
+          "date": "2025-06-14T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 10"
+        }
+      ],
+      "balance": -396,
+      "ledger": [
+        {
+          "date": "2025-06-12T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "بدء اشتراك Basic 10",
+          "details": {
+            "startDate": "2025-06-12T00:00:00",
+            "endDate": "2025-07-12T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-14T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "دفعة باقة Basic 10",
+          "change": 604
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "name": "Mahmoud Ziad",
+      "email": "ahmedali1148@gmail.com",
+      "tel": "01148199760",
+      "subscriptions": [
+        {
+          "itemId": 3,
+          "type": "bundle",
+          "start": "2025-06-16T00:00:00",
+          "end": "2025-07-16T00:00:00"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 541,
+          "date": "2025-06-19T00:00:00",
+          "method": "cash",
+          "note": "دفعة لباقة Basic 10"
+        }
+      ],
+      "balance": -459,
+      "ledger": [
+        {
+          "date": "2025-06-16T00:00:00",
+          "event": "subscription_start",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "بدء اشتراك Basic 10",
+          "details": {
+            "startDate": "2025-06-16T00:00:00",
+            "endDate": "2025-07-16T00:00:00"
+          },
+          "change": 0
+        },
+        {
+          "date": "2025-06-19T00:00:00",
+          "event": "payment",
+          "itemType": "bundle",
+          "itemId": 3,
+          "description": "دفعة باقة Basic 10",
+          "change": 541
+        }
+      ]
+    }
+  ]
+}
